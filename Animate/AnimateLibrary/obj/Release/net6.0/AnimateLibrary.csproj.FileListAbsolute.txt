@@ -1,0 +1,12 @@
+D:\project\C#\Animate\AnimateLibrary\bin\Release\net6.0\AnimateLibrary.deps.json
+D:\project\C#\Animate\AnimateLibrary\bin\Release\net6.0\AnimateLibrary.dll
+D:\project\C#\Animate\AnimateLibrary\bin\Release\net6.0\AnimateLibrary.pdb
+D:\project\C#\Animate\AnimateLibrary\obj\Release\net6.0\AnimateLibrary.csproj.AssemblyReference.cache
+D:\project\C#\Animate\AnimateLibrary\obj\Release\net6.0\AnimateLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\C#\Animate\AnimateLibrary\obj\Release\net6.0\AnimateLibrary.AssemblyInfoInputs.cache
+D:\project\C#\Animate\AnimateLibrary\obj\Release\net6.0\AnimateLibrary.AssemblyInfo.cs
+D:\project\C#\Animate\AnimateLibrary\obj\Release\net6.0\AnimateLibrary.csproj.CoreCompileInputs.cache
+D:\project\C#\Animate\AnimateLibrary\obj\Release\net6.0\AnimateLibrary.dll
+D:\project\C#\Animate\AnimateLibrary\obj\Release\net6.0\refint\AnimateLibrary.dll
+D:\project\C#\Animate\AnimateLibrary\obj\Release\net6.0\AnimateLibrary.pdb
+D:\project\C#\Animate\AnimateLibrary\obj\Release\net6.0\ref\AnimateLibrary.dll

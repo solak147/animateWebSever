@@ -1,0 +1,133 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Animate.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Animate.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\css\\anime.css",
+      "PackagePath": "staticwebassets\\css\\anime.css"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\css\\footer.css",
+      "PackagePath": "staticwebassets\\css\\footer.css"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\css\\jqueryUI\\images\\ui-icons_444444_256x240.png",
+      "PackagePath": "staticwebassets\\css\\jqueryUI\\images\\ui-icons_444444_256x240.png"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\css\\jqueryUI\\images\\ui-icons_555555_256x240.png",
+      "PackagePath": "staticwebassets\\css\\jqueryUI\\images\\ui-icons_555555_256x240.png"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\css\\jqueryUI\\images\\ui-icons_777620_256x240.png",
+      "PackagePath": "staticwebassets\\css\\jqueryUI\\images\\ui-icons_777620_256x240.png"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\css\\jqueryUI\\images\\ui-icons_777777_256x240.png",
+      "PackagePath": "staticwebassets\\css\\jqueryUI\\images\\ui-icons_777777_256x240.png"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\css\\jqueryUI\\images\\ui-icons_cc0000_256x240.png",
+      "PackagePath": "staticwebassets\\css\\jqueryUI\\images\\ui-icons_cc0000_256x240.png"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\css\\jqueryUI\\images\\ui-icons_ffffff_256x240.png",
+      "PackagePath": "staticwebassets\\css\\jqueryUI\\images\\ui-icons_ffffff_256x240.png"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\css\\jqueryUI\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\css\\jqueryUI\\jquery-ui.css"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\image\\banner.jpg",
+      "PackagePath": "staticwebassets\\image\\banner.jpg"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\js\\captha.js",
+      "PackagePath": "staticwebassets\\js\\captha.js"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\js\\javascript.js",
+      "PackagePath": "staticwebassets\\js\\javascript.js"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\js\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui.min.js"
+    },
+    {
+      "Id": "D:\\project\\CSharp\\_Animate\\Animate\\wwwroot\\js\\jquery.js",
+      "PackagePath": "staticwebassets\\js\\jquery.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Animate.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Animate.props",
+      "PackagePath": "build\\Animate.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Animate.props",
+      "PackagePath": "buildMultiTargeting\\Animate.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Animate.props",
+      "PackagePath": "buildTransitive\\Animate.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

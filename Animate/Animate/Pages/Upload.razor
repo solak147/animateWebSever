@@ -1,0 +1,82 @@
+﻿@page "/upload"
+@inject HttpClient httpClient
+@using System.IO;
+@inject IJSRuntime js
+@using Animate.Data
+@inject ITypedClient tt
+
+
+<h1>Upload</h1>
+
+<div class="row">
+    <div class="col-sm-6">
+        <form @onsubmit="OnSubmit">
+            <div class="custom-file my-3">
+                <InputFile OnChange="FileChangeHandler" id="customFile" />
+                <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
+
+            @if (ImgFile != null)
+            {
+                <img src="@imageDataUri" class="img-fluid mb-3" />
+                <h5>@message</h5>
+            }
+
+            <button type="submit" class="btn btn-primary">上傳</button>
+        </form>
+    </div>    
+</div>
+
+@code {
+
+    //上傳圖片訊息
+    public string message { get; set; } = string.Empty;
+
+    //Data:Uri Base 64 圖片
+    public string imageDataUri { get; set; }
+
+    public IBrowserFile ImgFile;
+
+    private async Task FileChangeHandler(InputFileChangeEventArgs e)
+    {
+        if (e.FileCount > 0)        
+            message = $"選擇了{e.FileCount}張圖片。(檔名：{e.File.Name})";   
+
+        var format = "image/jpg";
+        ImgFile = e.File;
+
+        var imageFile = await ImgFile.RequestImageFileAsync(format, 640, 480);
+
+        using var fileStream = imageFile.OpenReadStream();
+        using var memoryStream = new MemoryStream();
+        await fileStream.CopyToAsync(memoryStream);
+
+        imageDataUri = $"data:{format};base64,{Convert.ToBase64String(memoryStream.ToArray())}";
+
+        Console.Write("sssss"+tt._httpClient.BaseAddress);
+
+    }
+
+    private async Task OnSubmit()
+    {
+        if(ImgFile != null)
+        {
+            using Stream stream = ImgFile.OpenReadStream(2000000);
+            using MemoryStream ms = new MemoryStream();
+            await stream.CopyToAsync(ms);
+
+
+            UploadedFile uploadedFile = new UploadedFile();
+            uploadedFile.FileName = ImgFile.Name;
+            uploadedFile.FileContent = ms.ToArray();
+
+            var response = await httpClient.PostAsJsonAsync<UploadedFile>("/api/Upload", uploadedFile);
+            
+            if (response.IsSuccessStatusCode)            
+                await js.InvokeVoidAsync("alert", "上傳成功");            
+            else            
+                await js.InvokeVoidAsync("alert", "上傳失敗，請再試一次");                          
+                        
+        }
+    }
+}

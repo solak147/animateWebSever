@@ -1,0 +1,143 @@
+﻿@using Microsoft.JSInterop
+@using Animate.Data.Service
+
+<style>
+    * {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .sc-captcha {
+        width: 300px;
+        margin: 100px auto;
+    }
+
+    .sc_net_panel {
+        padding: 10px;
+    }
+
+        .sc_net_panel > div {
+            position: relative;
+        }
+
+    .bg_slider {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .bg_refresh {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        background: #808080;
+        color: #fff;
+        border-radius: 3px;
+        width: 16px;
+        line-height: 16px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .sc_net_slider_icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 37px;
+        text-align: center;
+        border-radius: 5px;
+        border: #808080 1px solid;
+        width: 37px;
+        line-height: 37px;
+        cursor: pointer;
+    }
+
+        .sc_net_slider_icon:hover {
+            color: #fff;
+            background: #1991fa;
+        }
+
+    .sc_net_slider_text {
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-align: center;
+        width: 280px;
+        color: #45494c;
+        border: #808080 1px solid;
+        border-radius: 5px;
+        line-height: 35px;
+        height: 37px;
+        cursor: default;
+    }
+
+    .sc_net_slider_area {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 37px;
+    }
+</style>
+
+<div style="top:-80px; position:absolute;">
+    <div class="sc-captcha">
+        <div class="sc_net_panel">
+            <div class="sc_net_bg">
+                <div class="sc_net_bgimg">
+                </div>
+                <div class="bg_refresh" onclick="loadCaptcha()" title="刷新">↻</div>
+            </div>
+        </div>
+        <div class="sc_net_panel">
+            <div class="sc_net_slider">
+                <div class="sc_net_slider_text">向右拖动滑块填充拼图</div>
+                <div class="sc_net_slider_area"></div>
+                <div class="sc_net_slider_icon">➞</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Inject] IJSRuntime JSRT { get; set; }
+    [Inject] IAuthService authService { get; set; }
+
+    [Parameter]
+    public LoginModel loginModel { get; set; }
+
+    private DotNetObjectReference<Captcha> objRef;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            objRef = DotNetObjectReference.Create(this);
+            await JSRT.InvokeVoidAsync("initCaptha", objRef);
+        }
+        await base.OnAfterRenderAsync(firstRender);
+    }
+
+    [JSInvokable]
+    public LoginModel getLoginModel()
+    {
+        return loginModel;
+    }
+
+    //驗證jwt
+    [JSInvokable]
+    public async Task<string> ValidateJwt(LoginModel loginModel)
+    {
+        bool result = await authService.LoginAsync(loginModel);
+        if (result)
+        {
+            return "validate success";
+        }
+        else
+        {
+             return "validate fail";
+        }
+    }
+
+} 

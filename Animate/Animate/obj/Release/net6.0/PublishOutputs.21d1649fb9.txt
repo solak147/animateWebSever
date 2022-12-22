@@ -1,0 +1,9 @@
+D:\project\C#\Animate\Animate\obj\Release\net6.0\PubTmp\Out\Animate.exe
+D:\project\C#\Animate\Animate\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+D:\project\C#\Animate\Animate\obj\Release\net6.0\PubTmp\Out\appsettings.json
+D:\project\C#\Animate\Animate\obj\Release\net6.0\PubTmp\Out\Animate.dll
+D:\project\C#\Animate\Animate\obj\Release\net6.0\PubTmp\Out\Animate.deps.json
+D:\project\C#\Animate\Animate\obj\Release\net6.0\PubTmp\Out\Animate.runtimeconfig.json
+D:\project\C#\Animate\Animate\obj\Release\net6.0\PubTmp\Out\Animate.pdb
+D:\project\C#\Animate\Animate\obj\Release\net6.0\PubTmp\Out\AnimateLibrary.dll
+D:\project\C#\Animate\Animate\obj\Release\net6.0\PubTmp\Out\AnimateLibrary.pdb
